@@ -1,0 +1,8 @@
+section.menu
+  .menu-header
+    .menu-header__avatar
+    .menu-header__title Alexey Chernov
+  .menu-button Add post
+  nav.menu-nav#menu-nav
+    ul.menu-nav__list
+      li.menu-nav__item(v-for="(item, index) of items" v-on:click="clickItem(index)" v-bind:class="{'active': activeItem === index}") {{item.title}}

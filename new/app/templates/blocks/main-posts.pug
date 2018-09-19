@@ -1,0 +1,9 @@
+section.main-posts#main-posts
+  .main-posts-search
+    input(type="search" placeholder="Find post")
+  .main-posts__wrap
+    .main-posts-item(v-for="(post, index) of posts" v-on:click="openedPost(index)" v-bind:class="{'open': openedPost === index}")
+      .main-posts-item__image
+      .main-posts-item__wrap
+        .main-posts-item__title {{post.title}}
+        .main-posts-item__text {{post.text}}

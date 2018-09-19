@@ -1,0 +1,50 @@
+.main-posts
+    width 40%
+    min-height 100%
+
+    &__wrap
+        padding 20px 10px
+
+    &-search
+        background-color #fcd9e6
+        height 55px
+        padding 0 10px
+        flex()
+        align-items center
+        input
+            width 100%
+            border-radius 50px
+            box-shadow none
+            border none
+            height 35px
+            padding 0 20px
+            +placeholder()
+                color #ccc
+    &-item
+        width 100%
+        min-height 120px
+        background-color #f0f0f0
+        border-radius 8px
+        padding 20px 25px
+        margin-bottom 10px
+        transition 0.3s all
+        cursor pointer
+        color #636363
+        flex()
+        &:hover
+            box-shadow 0 2px 20px #ccc
+
+        &__image
+            width 80px
+            min-width 80px
+            height 80px
+            border-radius 50%
+            background-color #fcd9e6
+
+        &__wrap
+            padding-left 30px
+
+        &__title
+            font-size 18px
+            padding-bottom 10px
+            margin-top 8px
